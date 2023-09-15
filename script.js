@@ -24,7 +24,7 @@ submitButton.addEventListener("click", function (event) {
   }
 });
 
-// Function to validate email format using a simple regex pattern
+// Function to validate email format using a simple regex patternHe
 function isValidEmail(email) {
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailPattern.test(email);
