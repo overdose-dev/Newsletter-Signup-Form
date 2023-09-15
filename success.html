@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+
+    <!-- Link to Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Subscription Successful</title>
+  </head>
+  <body>
+    <section id="successSection">
+      <img src="images/icon-list.svg" alt="" />
+      <p class="stayUpdated" style="line-height: 1; margin-bottom: 10px">
+        Thanks for subscribing!
+      </p>
+      <span style="line-height: 1.4">
+        A confirmation email has been sent to
+        <span id="email_sent" style="font-weight: 700"></span>. Please open it
+        and click the button inside to confirm your subscription.
+      </span>
+      <button style="margin-top: 30px">Dismiss message</button>
+    </section>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Chinazaekpere Uchenna</a>.
+      </div>
+    </footer>
+
+    <script>
+      // Get the email from the URL query parameter
+      const params = new URLSearchParams(window.location.search);
+      const email = params.get("email");
+
+      // Display the email in the HTML
+      const emailSentTo = document.getElementById("email_sent");
+      emailSentTo.textContent = email;
+      email.style.fontWeight = "400";
+    </script>
+  </body>
+</html>
