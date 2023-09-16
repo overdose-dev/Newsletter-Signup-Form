@@ -158,3 +158,45 @@ section {
   color: #ff5476;
   text-decoration: underline;
 }
+
+@media (min-width: 2500px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media (max-width: 430px) {
+  body {
+    background-color: white;
+  }
+
+  section,
+  #successSection {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: none;
+    flex-direction: column-reverse;
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  #left-side {
+    width: 100%;
+    padding: 25px 55px;
+  }
+
+  #right-side img {
+    width: 100%;
+    margin: 0;
+  }
+}
