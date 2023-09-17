@@ -182,6 +182,10 @@ footer {
 }
 
 @media (max-width: 430px) {
+  body {
+    background-color: white;
+  }
+
   section,
   #successSection {
     position: relative;
@@ -220,6 +224,10 @@ footer {
     font-size: 38px;
   }
 
+  #mailSection {
+    margin-top: 25px;
+  }
+
   .invalid {
     margin-right: 0;
     text-align: right;
@@ -228,18 +236,23 @@ footer {
   button,
   input {
     width: 100%;
+    margin-bottom: 8px;
+  }
+
+  footer {
+    position: unset;
   }
 
   .attribution {
-    /* position: static; */
     bottom: 0;
     color: hsl(234, 29%, 20%);
     text-align: center;
-    margin-top: 15px;
-    /* display: none; */
+    margin: 10px;
+    font-weight: 500;
   }
 
   .attribution a {
     color: hsl(234, 29%, 20%);
+    font-weight: 500;
   }
 }
