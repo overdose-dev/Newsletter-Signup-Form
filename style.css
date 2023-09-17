@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -18,7 +19,7 @@ section,
   left: 40%;
   transform: translate(-35%, -50%);
   border-radius: 25px;
-  padding: 15px;
+  padding: 15px 14px 15px 0;
   display: flex;
   color: hsl(234, 29%, 20%);
   justify-content: space-between;
@@ -38,14 +39,30 @@ section,
   margin-bottom: 23px;
 }
 
+.mobile_size {
+  display: none;
+}
+
+.desktop_size {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
 #email_sent {
   font-weight: 400;
 }
 
 #left-side {
-  width: 40%;
-  padding: 65px 55px;
+  width: 50%;
+  padding: 65px 0 65px 50px;
   text-align: left;
+}
+
+#right-side {
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .stayUpdated {
@@ -64,7 +81,6 @@ section,
 .list1 {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   padding-bottom: 15px;
 }
 
@@ -91,6 +107,7 @@ section,
   display: none;
   color: #ff5476;
   font-size: 14px;
+  margin-right: 30px;
 }
 
 input,
@@ -101,7 +118,7 @@ button {
 }
 
 input {
-  width: 88%;
+  width: 92%;
   padding: 15px 20px;
   border: 1px solid hsla(231, 7%, 60%, 0.6);
   color: hsl(231, 7%, 60%);
@@ -115,7 +132,7 @@ input:focus {
 }
 
 button {
-  width: 100%;
+  width: 92%;
   background-color: hsl(234, 29%, 20%);
   color: hsl(0, 0%, 100%);
   border: none;
@@ -135,10 +152,6 @@ footer {
   color: hsl(0, 0%, 100%);
   padding: 10px 0;
   text-align: center;
-}
-
-section {
-  margin-bottom: 60px;
 }
 
 .attribution {
@@ -169,10 +182,6 @@ section {
 }
 
 @media (max-width: 430px) {
-  body {
-    background-color: white;
-  }
-
   section,
   #successSection {
     position: relative;
@@ -187,16 +196,50 @@ section {
     padding: 0;
     justify-content: center;
     align-items: center;
-    height: 100vh;
   }
 
   #left-side {
     width: 100%;
-    padding: 25px 55px;
+    padding: 20px 20px;
   }
 
   #right-side img {
     width: 100%;
     margin: 0;
+  }
+
+  .mobile_size {
+    display: block;
+  }
+
+  .desktop_size {
+    display: none;
+  }
+
+  .stayUpdated {
+    font-size: 38px;
+  }
+
+  .invalid {
+    margin-right: 0;
+    text-align: right;
+  }
+
+  button,
+  input {
+    width: 100%;
+  }
+
+  .attribution {
+    /* position: static; */
+    bottom: 0;
+    color: hsl(234, 29%, 20%);
+    text-align: center;
+    margin-top: 15px;
+    display: none;
+  }
+
+  .attribution a {
+    color: hsl(234, 29%, 20%);
   }
 }
