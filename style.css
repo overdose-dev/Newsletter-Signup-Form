@@ -179,6 +179,81 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    background-color: white;
+  }
+
+  section,
+  #successSection {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: none;
+    flex-direction: column-reverse;
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #left-side {
+    width: 100%;
+    padding: 20px 65px;
+  }
+
+  #right-side img {
+    width: 100%;
+    height: 100vh;
+    margin-top: -280px;
+  }
+
+  .mobile_size {
+    display: block;
+  }
+
+  .desktop_size {
+    display: none;
+  }
+
+  .stayUpdated {
+    font-size: 38px;
+    padding: 10px 0;
+  }
+
+  #mailSection {
+    margin-top: 25px;
+  }
+
+  .invalid {
+    margin-right: 0;
+    text-align: right;
+  }
+
+  button,
+  input {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  footer {
+    position: unset;
+  }
+
+  .attribution {
+    bottom: 0;
+    color: hsl(234, 29%, 20%);
+    text-align: center;
+    margin: 10px;
+    font-weight: 500;
+  }
+
+  .attribution a {
+    color: hsl(234, 29%, 20%);
+    font-weight: 500;
+  }
 }
 
 @media (max-width: 430px) {
