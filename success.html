@@ -23,31 +23,62 @@
           width: 10%;
         }
 
+        #successSection span {
+          font-size: 20px;
+          padding: 0 50px;
+        }
+
         button {
           font-size: 14px;
           letter-spacing: 1px;
-          width: 50%;
+          width: 60%;
+          margin-top: 120px;
+        }
+      }
+
+      @media (min-width: 430px) and (max-width: 768px) {
+        #successSection {
+          flex-direction: column;
+          padding: 0 45px;
         }
 
-        @media (max-width: 430px) {
-          #successSection {
-            flex-direction: column;
-            padding: 0 25px;
-          }
+        #successSection img {
+          align-self: flex-start;
+        }
 
-          #successSection img {
-            margin-bottom: 0;
-            width: 18%;
-            align-self: flex-start;
-          }
+        #successSection span {
+          padding: 0;
+        }
 
-          #successSection span {
-            margin-bottom: 45px;
-          }
+        .stayUpdated {
+          margin-left: -36vw;
+        }
 
-          button {
-            width: 100%;
-          }
+        button {
+          width: 100%;
+          margin-top: 110px;
+        }
+      }
+
+      @media (max-width: 430px) {
+        #successSection {
+          flex-direction: column;
+          padding: 0 25px;
+        }
+
+        #successSection img {
+          margin-bottom: 0;
+          width: 18%;
+          align-self: flex-start;
+        }
+
+        #successSection span {
+          margin-bottom: 45px;
+          padding: 0;
+        }
+
+        button {
+          width: 100%;
         }
       }
     </style>
@@ -62,10 +93,10 @@
       </p>
       <span style="line-height: 1.4">
         A confirmation email has been sent to
-        <span id="email_sent" style="font-weight: 700"></span>. Please open it
-        and click the button inside to confirm your subscription.
+        <span id="email_sent" style="font-weight: 700; padding: 0"></span>.
+        Please open it and click the button inside to confirm your subscription.
       </span>
-      <button style="margin-top: 30px">Dismiss message</button>
+      <button>Dismiss message</button>
     </section>
 
     <footer>

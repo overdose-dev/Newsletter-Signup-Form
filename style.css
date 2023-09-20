@@ -16,7 +16,7 @@ section,
   position: absolute;
   background-color: hsl(0, 0%, 100%);
   top: 50%;
-  left: 40%;
+  left: 42%;
   transform: translate(-35%, -50%);
   border-radius: 25px;
   padding: 15px 14px 15px 0;
@@ -172,13 +172,11 @@ footer {
   text-decoration: underline;
 }
 
-@media (min-width: 2500px) {
-}
-
 @media (max-width: 1024px) {
   body {
     background: none;
   }
+
   section,
   #successSection {
     position: relative;
