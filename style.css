@@ -132,7 +132,7 @@ input:focus {
 }
 
 button {
-  width: 92%;
+  width: 97%;
   background-color: hsl(234, 29%, 20%);
   color: hsl(0, 0%, 100%);
   border: none;
@@ -176,9 +176,58 @@ footer {
 }
 
 @media (max-width: 1024px) {
+  body {
+    background: none;
+  }
+  section,
+  #successSection {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #left-side {
+    width: 100%;
+    padding: 0 50px;
+  }
+
+  .invalid {
+    margin: 0;
+  }
+
+  button,
+  input {
+    width: 100%;
+  }
+
+  footer {
+    color: hsl(234, 29%, 20%);
+  }
+
+  .attribution {
+    bottom: 0;
+    color: hsl(234, 29%, 20%);
+    text-align: center;
+    margin: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  .attribution a {
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+  }
 }
 
-@media (min-width: 431px) and (max-width: 768px) {
+@media (min-width: 430px) and (max-width: 768px) {
   body {
     background-color: white;
   }
@@ -255,6 +304,17 @@ footer {
   .attribution a {
     color: hsl(234, 29%, 20%);
     font-weight: 500;
+  }
+}
+
+@media (min-width: 431px) and (max-width: 640px) {
+  #left-side {
+    padding: 0 45px;
+    margin-top: -12vw;
+  }
+
+  #right-side img {
+    margin-top: -200px;
   }
 }
 
